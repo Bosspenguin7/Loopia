@@ -1,0 +1,93 @@
+{
+    "id": "c03def37-faec-4f1b-bf90-e61fc4e38612",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "ApartmentScene",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1200,
+        "borderHeight": 750
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "e1527f52-9ebe-4fd7-82b0-d71fac28f7e0",
+            "label": "apt_ground",
+            "texture": {
+                "key": "apt_ground"
+            },
+            "x": 602,
+            "y": 517,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "a2b3c4d5-0001-4000-8000-000000000001",
+            "label": "apt_wall",
+            "texture": {
+                "key": "apt_wall"
+            },
+            "x": 600,
+            "y": 270,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "a2b3c4d5-0002-4000-8000-000000000002",
+            "label": "apt_sofa",
+            "texture": {
+                "key": "apt_sofa"
+            },
+            "x": 1040,
+            "y": 492,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "a2b3c4d5-0003-4000-8000-000000000003",
+            "label": "apt_desk",
+            "texture": {
+                "key": "apt_desk"
+            },
+            "x": 981,
+            "y": 533,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Polygon",
+            "id": "06348391-c31b-4312-8c3d-774539b898fe",
+            "label": "apartment_inside_door",
+            "displayName": "apartment_inside_door",
+            "useGameObjectName": true,
+            "x": 229,
+            "y": 455,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "111.86431776949908 211.33873017838954 -9.926566457367372 146.36424125245608 63.01049809383511 102.4702977755341 181.31062021200273 161.48902571181077"
+        },
+        {
+            "type": "Image",
+            "id": "e64051b8-9f61-4441-aff5-8e7fa8f342f9",
+            "label": "apt_bed",
+            "texture": {
+                "key": "apt_bed"
+            },
+            "x": 545,
+            "y": 290,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

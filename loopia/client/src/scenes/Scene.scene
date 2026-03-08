@@ -1,0 +1,404 @@
+{
+    "id": "07fbdeee-03b9-41df-829a-15b5c62d9b8f",
+    "sceneType": "SCENE",
+    "settings": {
+        "snapWidth": 32,
+        "snapHeight": 64,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Scene",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1200,
+        "borderHeight": 750
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b7483033-4338-47ce-bc0c-d7e675c4d7a9",
+            "label": "ground_new",
+            "texture": {
+                "key": "ground_new"
+            },
+            "x": 581,
+            "y": 438,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "f64ab6ea-13bc-4226-8887-c0eb65829535",
+            "label": "houses1",
+            "texture": {
+                "key": "houses1"
+            },
+            "x": 557,
+            "y": 347,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "56ef5757-3098-49d7-8fa6-ea5374ba7681",
+            "label": "l1_new",
+            "texture": {
+                "key": "l1_new"
+            },
+            "x": 1085,
+            "y": 316,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "4cd57e35-cee0-4e59-bb15-d1987bdd0363",
+            "label": "bushes_new",
+            "texture": {
+                "key": "bushes_new"
+            },
+            "x": 365,
+            "y": 404,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "98bea05c-c16f-4409-8c3d-0c6769a8a012",
+            "label": "pool",
+            "texture": {
+                "key": "pool"
+            },
+            "x": 228,
+            "y": 415,
+            "scaleX": 0.9,
+            "scaleY": 0.9
+        },
+        {
+            "type": "Image",
+            "id": "30676298-a479-4797-b231-cafd0062ed39",
+            "label": "tree",
+            "texture": {
+                "key": "tree"
+            },
+            "x": 90,
+            "y": 304,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "69f160f7-0e7a-4faa-92a9-9ba5afa3c8d2",
+            "label": "lamp",
+            "texture": {
+                "key": "lamp"
+            },
+            "x": 369,
+            "y": 506,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Image",
+            "id": "f6c3f7ec-cff7-454c-bf11-a983e38d45e2",
+            "label": "lamp_1",
+            "texture": {
+                "key": "lamp"
+            },
+            "x": 441,
+            "y": 469,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Image",
+            "id": "467aec99-5394-40ce-b02b-fc95a152d953",
+            "label": "tree_1",
+            "texture": {
+                "key": "tree"
+            },
+            "x": 326,
+            "y": 330,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Polygon",
+            "id": "46215880-1548-2636-6911-725877561277",
+            "label": "door_bearsandsalmon",
+            "displayName": "door_bearsandsalmon",
+            "useGameObjectName": true,
+            "x": 471,
+            "y": 211,
+            "isFilled": true,
+            "points": "69.32382023223956 103.67588816341916 36.20934729412321 85.41988164128848 34.41636182410631 63.53941056700076 36.30511603400477 34.9004121052313 71.313450637205 49.03192191262163 70.5221504076599 70.76449240892885"
+        },
+        {
+            "type": "Polygon",
+            "id": "e11cb22f-cc17-4025-9c0b-b6b5ff53644d",
+            "label": "door_apartment",
+            "displayName": "door_apartment",
+            "useGameObjectName": true,
+            "x": 286,
+            "y": 165,
+            "isFilled": true,
+            "points": "76.14128149623764 48.14616714764534 77.02529061194701 19.977134495249217 92.61259304926371 24.2865699841438 91.33385849661849 54.73014607472467"
+        },
+        {
+            "type": "Polygon",
+            "id": "037101b7-a284-4bc3-9f4d-d226966913fc",
+            "label": "door_cafe",
+            "displayName": "door_cafe",
+            "useGameObjectName": true,
+            "x": 554,
+            "y": 309,
+            "isFilled": true,
+            "points": "44.63245426810921 27.405061147069276 44.71897002077471 -14.1522396954987 66.45564454289418 -4.383143324237476 65.46727428709008 38.961100172789216"
+        },
+        {
+            "type": "Polygon",
+            "id": "fb3366d3-8913-4ae1-98ef-966383f9c236",
+            "label": "door_avalabs",
+            "displayName": "door_avalabs",
+            "useGameObjectName": true,
+            "x": 997,
+            "y": 395,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "73.92654950728885 48.33856465103177 38.319828974594124 31.38631326502091 39.459055702255505 -36.6354435836238 88.62058472168695 -14.583966390622116 115.90585881960092 -0.08279634537441183 114.61195283371487 66.46179446389243"
+        },
+        {
+            "type": "Image",
+            "id": "2f5cd992-2bed-4e0b-88cc-08548edd7716",
+            "label": "cars",
+            "texture": {
+                "key": "cars"
+            },
+            "x": 790,
+            "y": 480,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "3245f2d4-564d-4712-a765-d4bfd72e6390",
+            "label": "border1",
+            "texture": {
+                "key": "border1"
+            },
+            "x": 798,
+            "y": 401,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "1b190641-477e-4034-899f-66aefbce8ac9",
+            "label": "border2",
+            "texture": {
+                "key": "border2"
+            },
+            "x": 601,
+            "y": 504,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "b6c8c1a4-64df-4e42-8eba-ac0ed2f8c950",
+            "label": "kiosk",
+            "texture": {
+                "key": "kiosk"
+            },
+            "x": 514,
+            "y": 544,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "b0784094-fd78-4aa5-be1f-32990315094a",
+            "label": "wolfie",
+            "texture": {
+                "key": "wolfie"
+            },
+            "x": 354,
+            "y": 446,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "68c72f6d-a887-44a0-a4ce-434cf3bdb8a4",
+            "label": "billboard",
+            "texture": {
+                "key": "billboard"
+            },
+            "x": 605,
+            "y": 411,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "81c1b161-8416-4fc0-904f-95e15d45531d",
+            "label": "fireplug",
+            "texture": {
+                "key": "fireplug"
+            },
+            "x": 509,
+            "y": 371,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "755bedb5-44f8-4052-bf00-16a646f94fef",
+            "label": "fireplug_1",
+            "texture": {
+                "key": "fireplug"
+            },
+            "x": 751,
+            "y": 353,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "0914456d-f7e6-46de-a978-39cd4e6113d8",
+            "label": "fireplug_2",
+            "texture": {
+                "key": "fireplug"
+            },
+            "x": 950,
+            "y": 450,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "28c97480-01fb-4994-89e8-8d97d1c0c741",
+            "label": "bench",
+            "texture": {
+                "key": "bench"
+            },
+            "x": 149,
+            "y": 290,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "29dfbf47-d173-4450-8197-058b8f67b515",
+            "label": "bench_1",
+            "texture": {
+                "key": "bench"
+            },
+            "x": 29,
+            "y": 353,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "048783f2-2f9b-49fb-9196-c7c6f07d081f",
+            "label": "tree_2",
+            "texture": {
+                "key": "tree"
+            },
+            "x": 398,
+            "y": 361,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Polygon",
+            "id": "1874beeb-b250-48cc-bb2c-7029769b28cf",
+            "label": "door_grotto",
+            "displayName": "door_grotto",
+            "useGameObjectName": true,
+            "x": 826,
+            "y": 283,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "30.803106289522482 27.26481671382137 28.894636868431675 4.4177395366885435 29.97008958318122 -14.615391903569297 49.69094026931657 -21.510555426249205 49.367165060466846 5.053896010434812 49.06736356621616 20.32165138034611"
+        },
+        {
+            "type": "Image",
+            "id": "cda8f795-3548-4ef7-a00d-893ee8f15968",
+            "label": "bank2",
+            "texture": {
+                "key": "bank2"
+            },
+            "x": 250,
+            "y": 304,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "7b997f55-0585-4253-bc19-14af67b2c2b9",
+            "label": "bank",
+            "texture": {
+                "key": "bank2"
+            },
+            "x": 448,
+            "y": 407,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "73e236cb-8f0e-4b8f-9305-119d5874d95e",
+            "label": "tree_3",
+            "texture": {
+                "key": "tree"
+            },
+            "x": 711,
+            "y": 447,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "3ca6a785-7ea2-43b1-94d0-7a2a7b5e8241",
+            "label": "tree_4",
+            "texture": {
+                "key": "tree"
+            },
+            "x": 918,
+            "y": 250,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "79cd05d7-b48d-4a63-8416-a476fbc8a30d",
+            "label": "tree_5",
+            "texture": {
+                "key": "tree"
+            },
+            "x": 459,
+            "y": 576,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "288e3250-8025-42c0-b730-331838f9983e",
+            "label": "tree_6",
+            "texture": {
+                "key": "tree"
+            },
+            "x": 934,
+            "y": 332,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

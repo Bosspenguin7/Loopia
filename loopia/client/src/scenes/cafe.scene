@@ -1,0 +1,273 @@
+{
+    "id": "8762b1e1-bb87-406e-b59b-afdd697dc212",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "CafeScene",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1200,
+        "borderHeight": 750
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "cafe-ground-001",
+            "label": "cafe_ground",
+            "texture": {
+                "key": "cafe_ground"
+            },
+            "x": 600,
+            "y": 490,
+            "scaleX": 0.57,
+            "scaleY": 0.57
+        },
+        {
+            "type": "Image",
+            "id": "cafe-wall-001",
+            "label": "cafe_wall",
+            "texture": {
+                "key": "cafe_wall"
+            },
+            "x": 600,
+            "y": 255,
+            "scaleX": 0.56,
+            "scaleY": 0.56
+        },
+        {
+            "type": "Image",
+            "id": "cafe-bar-001",
+            "label": "cafe_bar",
+            "texture": {
+                "key": "cafe_bar"
+            },
+            "x": 640,
+            "y": 209,
+            "scaleX": 0.55,
+            "scaleY": 0.55
+        },
+        {
+            "type": "Image",
+            "id": "cafe-seats1-001",
+            "label": "cafe_seats1",
+            "texture": {
+                "key": "cafe_seats1"
+            },
+            "x": 222,
+            "y": 415,
+            "scaleX": 0.55,
+            "scaleY": 0.55
+        },
+        {
+            "type": "Image",
+            "id": "cafe-dj-001",
+            "label": "cafe_dj",
+            "texture": {
+                "key": "cafe_dj"
+            },
+            "x": 941,
+            "y": 438,
+            "scaleX": 0.55,
+            "scaleY": 0.55
+        },
+        {
+            "type": "Image",
+            "id": "cafe-seats2-001",
+            "label": "cafe_seats2",
+            "texture": {
+                "key": "cafe_seats2"
+            },
+            "x": 386,
+            "y": 456,
+            "scaleX": 0.55,
+            "scaleY": 0.55
+        },
+        {
+            "type": "Image",
+            "id": "cafe-bistro-001",
+            "label": "cafe_bistro",
+            "texture": {
+                "key": "cafe_bistro"
+            },
+            "x": 500,
+            "y": 620,
+            "scaleX": 0.45,
+            "scaleY": 0.45
+        },
+        {
+            "type": "Image",
+            "id": "cafe-bistro-002",
+            "label": "cafe_bistro_1",
+            "texture": {
+                "key": "cafe_bistro"
+            },
+            "x": 569,
+            "y": 653,
+            "scaleX": 0.45,
+            "scaleY": 0.45
+        },
+        {
+            "type": "Image",
+            "id": "2fe9cb07-b545-4f1b-9bb3-defed424a1b4",
+            "label": "cafe_bistro_2",
+            "texture": {
+                "key": "cafe_bistro"
+            },
+            "x": 570,
+            "y": 581,
+            "scaleX": 0.45,
+            "scaleY": 0.45
+        },
+        {
+            "type": "Image",
+            "id": "e101359b-e8f9-44b8-b8a0-7a7b4f7d9c7d",
+            "label": "cafe_bistro_3",
+            "texture": {
+                "key": "cafe_bistro"
+            },
+            "x": 639,
+            "y": 616,
+            "scaleX": 0.45,
+            "scaleY": 0.45
+        },
+        {
+            "type": "Image",
+            "id": "npc-holly-001",
+            "label": "npc_holly",
+            "texture": {
+                "key": "npc_holly"
+            },
+            "x": 621,
+            "y": 212,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "npc-kahnwald-001",
+            "label": "npc_kahnwald",
+            "texture": {
+                "key": "npc_kahnwald"
+            },
+            "x": 675,
+            "y": 235,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Polygon",
+            "id": "ab8d4fa1-632f-4e8d-8074-6d8e65bb8f6b",
+            "label": "cafe_inside_door",
+            "displayName": "cafe_inside_door",
+            "useGameObjectName": true,
+            "x": 234,
+            "y": 438,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "79.82157671686744 230.58957460253998 -19.34380869350788 181.86805165378527 44.640189799687136 145.94827467621548 147.36088507749787 193.46529928101344"
+        },
+        {
+            "type": "Polygon",
+            "id": "e840b0d1-985b-4a42-8456-21d01a24044e",
+            "label": "obs_cafe_left_outside",
+            "displayName": "obs_cafe_left_outside",
+            "useGameObjectName": true,
+            "x": 359,
+            "y": 197,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-57.88280019884746 554.5546509849785 -56.46210365276896 48.94040374779867 98.40760116652137 47.212413056149444 550.9835803762651 45.91144620167111 547.6277234533106 249.70572790777888 540.3073092508643 250.37657590570055 281.66289515466156 385.07538173767796"
+        },
+        {
+            "type": "Polygon",
+            "id": "b417398d-b068-4a34-8153-4253f43821c8",
+            "label": "obs_cafe_right_outside",
+            "displayName": "obs_cafe_right_outside",
+            "useGameObjectName": true,
+            "x": 962,
+            "y": 204,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-56.74998488215124 242.54741638474576 -56.46210365276896 48.94040374779867 98.40760116652137 47.212413056149444 550.9835803762651 45.91144620167111 545.3572190126486 547.0730227046199 287.4182572211595 417.7468056440526"
+        },
+        {
+            "type": "Polygon",
+            "id": "8421b585-d2b9-4c48-9805-4c5d8d0cf612",
+            "label": "obs_cafe_rightbottom_outside",
+            "displayName": "obs_cafe_rightbottom_outside",
+            "useGameObjectName": true,
+            "x": 1414,
+            "y": 892,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-524.5719684646942 55.52938666604658 -233.77300257691633 -87.28595559709014 101.99123235075504 -250.9011842632354 96.4745972859925 -16.702260493237674 102.88098956914558 50.37779275414454"
+        },
+        {
+            "type": "Polygon",
+            "id": "42cb4c7e-0942-4d8c-93b4-f23105a1664e",
+            "label": "obs_cafe_leftbottom_outside",
+            "displayName": "obs_cafe_leftbottom_outside",
+            "useGameObjectName": true,
+            "x": 780,
+            "y": 882,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-487.39103406167214 57.506050264563925 -472.86501121588924 -242.40273195575543 -309.98840377694034 -166.6324877311128 -334.84506684976304 -152.52881472765205 -245.09069136896335 -109.30617510406643 -223.4581205663044 -121.20408904552886 46.94901446693325 13.999478471089844 121.81747071059885 50.77484883561016"
+        },
+        {
+            "type": "Polygon",
+            "id": "35839db8-4780-4a03-bccb-a5f69680e515",
+            "label": "obs_cafe_bar",
+            "displayName": "obs_cafe_bar",
+            "useGameObjectName": true,
+            "x": 710,
+            "y": 288,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "22.315266757117854 112.98304828096897 -65.25048064279463 67.09361102033134 -71.11660002846571 13.664902433860902 64.10280604241817 -6.660230114156789 273.6385541818728 55.89081728445851 285.7031012820436 67.95536438462923 285.8493978584621 115.3517994210143 246.856295101497 133.32387459143288 158.59700143673362 181.78373302763322"
+        },
+        {
+            "type": "Polygon",
+            "id": "f2828c07-a079-47f0-af5f-ccba488199b6",
+            "label": "obs_cafe_dc",
+            "displayName": "obs_cafe_dc",
+            "useGameObjectName": true,
+            "x": 916,
+            "y": 446,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "141.31413701081595 89.85999766037281 18.32177512234135 31.260768888114903 51.8729313555138 -9.751333831407685 133.73950096381526 31.558968203609084 168.2096355357317 59.99682922544014 166.80070440457516 92.25958579639959"
+        },
+        {
+            "type": "Polygon",
+            "id": "96c919ff-706a-4127-b29b-f1989efb4eb2",
+            "label": "obs_cafe_desk1",
+            "displayName": "obs_cafe_desk1",
+            "useGameObjectName": true,
+            "x": 249,
+            "y": 468,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "52.57706050726293 152.03260264278512 -24.992079225893406 115.13171823356095 232.85451960060394 -46.953697564572636 289.1124606193355 0.5910359064002364 301.5383747932318 29.2498560637859 223.40469135315143 64.92386034969246 130.9165320933937 111.16793997957132"
+        },
+        {
+            "type": "Polygon",
+            "id": "ba69562b-7b92-4680-af59-9092b203b050",
+            "label": "obs_cafe_desk2",
+            "displayName": "obs_cafe_desk2",
+            "useGameObjectName": true,
+            "x": 413,
+            "y": 495,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "48.777651785148265 107.6945644051101 -25.682339808433426 70.69930070120705 57.60056127126575 19.122625183313147 139.51864518705116 -21.381280961314502 213.18904597874985 20.85996769119471 177.8351683089508 43.321377797135895 111.77219740912386 76.89016942195565"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

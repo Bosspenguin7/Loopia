@@ -1,0 +1,249 @@
+{
+    "id": "c8069a59-3dfe-4d40-bd31-5c71df0b816d",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "avalabs",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1200,
+        "borderHeight": 750
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0001-4000-9000-000000000001",
+            "label": "avalabs_ground",
+            "texture": {
+                "key": "avalabs_ground"
+            },
+            "x": 600,
+            "y": 505,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0002-4000-9000-000000000002",
+            "label": "avalabs_wall",
+            "texture": {
+                "key": "avalabs_wall"
+            },
+            "x": 600,
+            "y": 270,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0004-4000-9000-000000000004",
+            "label": "avalabs_chair1",
+            "texture": {
+                "key": "avalabs_chair1"
+            },
+            "x": 515,
+            "y": 367,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0005-4000-9000-000000000005",
+            "label": "avalabs_chair2",
+            "texture": {
+                "key": "avalabs_chair2"
+            },
+            "x": 627,
+            "y": 433,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0007-4000-9000-000000000007",
+            "label": "avalabs_table",
+            "texture": {
+                "key": "avalabs_table"
+            },
+            "x": 571,
+            "y": 414,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Image",
+            "id": "npc-emin-hoca-001",
+            "label": "npc_emin_hoca",
+            "texture": {
+                "key": "npc_emin_hoca"
+            },
+            "x": 737,
+            "y": 336,
+            "scaleX": 0.9,
+            "scaleY": 0.9
+        },
+        {
+            "type": "Image",
+            "id": "npc-avery-001",
+            "label": "npc_avery",
+            "texture": {
+                "key": "npc_avery"
+            },
+            "x": 875,
+            "y": 388,
+            "scaleX": 0.9,
+            "scaleY": 0.9
+        },
+        {
+            "type": "Image",
+            "id": "npc-vohvoh-001",
+            "label": "npc_vohvoh",
+            "texture": {
+                "key": "npc_vohvoh"
+            },
+            "x": 1017,
+            "y": 452,
+            "scaleX": 0.9,
+            "scaleY": 0.9
+        },
+        {
+            "type": "Polygon",
+            "id": "a1b2c3d4-0008-4000-9000-000000000008",
+            "label": "avalabs_inside_door",
+            "displayName": "avalabs_inside_door",
+            "useGameObjectName": true,
+            "x": 270,
+            "y": 455,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "111.86431776949908 211.33873017838954 -9.926566457367372 146.36424125245608 63.01049809383511 102.4702977755341 181.31062021200273 161.48902571181077"
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0003-4000-9000-000000000003",
+            "label": "avalabs_desk",
+            "texture": {
+                "key": "avalabs_desk"
+            },
+            "x": 647,
+            "y": 348,
+            "scaleX": 0.72,
+            "scaleY": 0.72
+        },
+        {
+            "type": "Polygon",
+            "id": "b3c19459-ee38-469d-85cf-e15ef90ff383",
+            "label": "obs_avalabs_left_outside",
+            "displayName": "obs_avalabs_left_outside",
+            "useGameObjectName": true,
+            "x": 486,
+            "y": 392,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-165.21063543154622 449.8271018084538 -170.92963994852784 -104.06281089818862 97.09978911485547 -117.50287818148541 469.5157160830946 -114.57679659418864 472.66821971501406 117.79081492497053 205.02902480327492 256.75073609505546"
+        },
+        {
+            "type": "Polygon",
+            "id": "b55f7310-a401-4186-8f59-08a21311a5a5",
+            "label": "obs_avalabs_right_outside",
+            "displayName": "obs_avalabs_right_outside",
+            "useGameObjectName": true,
+            "x": 1050,
+            "y": 299,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-181.87985577290897 240.75727046929828 -180.34573592834204 33.22955691388 -127.64227403265022 -37.041725613709104 138.38472410750853 -34.86249488853878 480.747944530294 -41.05619933935935 478.53748948397674 388.1818147169455 486.0497402391251 539.5703420177886 438.38247089678293 543.3151890478938 189.41562664507404 416.6594080368958 -136.728516679989 253.58733637436433"
+        },
+        {
+            "type": "Polygon",
+            "id": "6f95fb60-5b4a-4ca4-9f04-9c451f61072a",
+            "label": "obs_leftdown_outside ",
+            "displayName": "obs_leftdown_outside ",
+            "useGameObjectName": true,
+            "x": 332,
+            "y": 632,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-21.857334544594835 247.25714818089517 -18.483696289755557 52.33389307478848 101.66634118438579 -7.949832932328476 180.17064481242562 30.45983151708588 154.0408586427411 41.28607141899806 206.67829704131856 74.14114060377833 267.3614654205652 103.6158223879838 303.7713664481132 88.0115790904633 487.5546763966888 186.83845330809353 609.4545897221747 244.05401206566896"
+        },
+        {
+            "type": "Polygon",
+            "id": "8dd6f755-e9d2-4f43-bd1c-ecfc09c66db2",
+            "label": "obs_rightdown_outside",
+            "displayName": "obs_rightdown_outside",
+            "useGameObjectName": true,
+            "x": 1048,
+            "y": 627,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "50.09723295331233 255.7207024926911 -222.70345856176397 255.66781321652007 -37.338694219304784 241.5710660527382 31.29204665519569 216.07964801363804 145.02298867579657 155.29242038193755 431.3112220379984 12.619802005187182 533.2768941943992 55.2876265362369 538.4894098343118 267.30144771637833"
+        },
+        {
+            "type": "Polygon",
+            "id": "9c2063ec-c702-4828-afe4-06981ed7e300",
+            "label": "obs_ava_1",
+            "displayName": "obs_ava_1",
+            "useGameObjectName": true,
+            "x": 466,
+            "y": 353,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "51.41347357976769 63.96016685927778 67.97704777635472 50.59991008946557 95.68949455822252 35.88956387410568 120.09231603192993 61.07358483575685 80.36526734929241 83.09062286894488"
+        },
+        {
+            "type": "Polygon",
+            "id": "d78d66ff-ba1c-4ef1-8664-aed368cb2c7b",
+            "label": "obs_ava_3",
+            "displayName": "obs_ava_3",
+            "useGameObjectName": true,
+            "x": 578,
+            "y": 411,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "47.33114117059371 62.60933521863885 67.97704777635472 50.59991008946557 84.82983695957915 40.18236517385484 114.75506961129062 63.660737980677226 80.7963209413158 79.69242950316344"
+        },
+        {
+            "type": "Polygon",
+            "id": "6f1c4225-1b79-456c-b0c5-3ad9ef87aa6f",
+            "label": "obs_ava_2",
+            "displayName": "obs_ava_2",
+            "useGameObjectName": true,
+            "x": 524,
+            "y": 377,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "47.09955361279259 63.34745096041924 62.90295502368629 54.64762295003363 78.93684714477213 46.423678469961274 106.72153589419165 63.812305766569175 78.29535198485237 77.71131712882519"
+        },
+        {
+            "type": "Polygon",
+            "id": "09706510-ba47-4c23-b746-34a230799940",
+            "label": "obs_ava_4",
+            "displayName": "obs_ava_4",
+            "useGameObjectName": true,
+            "x": 654,
+            "y": 301,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "27.85522221895951 128.56206751928337 -10.18260158757731 110.58947959695335 32.91123912190068 87.10641768656228 71.80308329428789 107.07308422682077 132.2064711752082 135.84545023390268 84.64877869653675 160.15286165168823"
+        },
+        {
+            "type": "Polygon",
+            "id": "51bf6879-d7bd-4c34-af1e-a35c9a3faa5c",
+            "label": "obs_ava_5",
+            "displayName": "obs_ava_5",
+            "useGameObjectName": true,
+            "x": 641,
+            "y": 283,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "61.95936819037605 73.71750439566199 41.29704987550555 59.133062831016794 70.44785380923153 45.9853694642146 84.42461030868319 54.24204529249871 108.14220792916416 70.9004548167432 80.7976052113761 88.3232960327723"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

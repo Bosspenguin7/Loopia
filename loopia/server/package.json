@@ -1,0 +1,42 @@
+{
+  "name": "loopia-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "start": "node lib/server/src/index.js",
+    "build": "tsc && tsc-alias",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@colyseus/monitor": "^0.16.7",
+    "@prisma/client": "^5.22.0",
+    "colyseus": "^0.16.5",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "easystarjs": "^0.4.4",
+    "ethers": "^6.16.0",
+    "express": "^5.2.1",
+    "prisma": "^5.22.0"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.8",
+    "hardhat": "^2.28.6",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}

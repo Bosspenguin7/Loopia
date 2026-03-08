@@ -1,0 +1,129 @@
+{
+    "id": "cca5bfa4-8aa9-4047-9f82-4b8d4d5efcae",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "grotto",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1200,
+        "borderHeight": 750
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "caed870b-5b28-4d72-8623-bc4ecf1fe3ae",
+            "label": "grotto_walls2",
+            "texture": {
+                "key": "grotto_walls2"
+            },
+            "x": 518,
+            "y": 293,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "492dc906-6522-4210-8bb9-0e55057586b1",
+            "label": "grotto_ground",
+            "texture": {
+                "key": "grotto_ground"
+            },
+            "x": 503,
+            "y": 510,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "1f9bcc8a-5ece-47a9-bfd8-9b33f4890087",
+            "label": "grotto_walls1",
+            "texture": {
+                "key": "grotto_walls1"
+            },
+            "x": 793,
+            "y": 482,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "npc-wrath-001",
+            "label": "npc_wrath",
+            "texture": {
+                "key": "npc_wrath"
+            },
+            "x": 726,
+            "y": 321,
+            "scaleX": 0.9,
+            "scaleY": 0.9
+        },
+        {
+            "type": "Polygon",
+            "id": "71c28f90-6c48-44e0-9f61-aa89bdb8a367",
+            "label": "grotto_inside_door",
+            "displayName": "grotto_inside_door",
+            "useGameObjectName": true,
+            "x": 361,
+            "y": 449,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "93.56382950153656 241.9140384954104 -22.851049402435592 189.00878211935398 55.41746249362684 144.447309861767 141.64102681622822 185.85675980082323"
+        },
+        {
+            "type": "Polygon",
+            "id": "3709f7c1-da5d-485c-8bc0-774c9add80f4",
+            "label": "portal_grotto_games",
+            "displayName": "portal_grotto_games",
+            "useGameObjectName": true,
+            "x": 747,
+            "y": 326,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "41.662178329265195 115.1242042859732 46.21892904345463 54.31249159244655 55.48547573961104 -25.183581113796038 111.91162329931649 3.767803217462216 106.91228253022217 56.203246263476174 100.54153167661462 133.58174073199075"
+        },
+        {
+            "type": "Polygon",
+            "id": "04ae19b0-48e2-49f0-842c-e7a191810533",
+            "label": "obs_grotto_left_outside",
+            "displayName": "obs_grotto_left_outside",
+            "useGameObjectName": true,
+            "x": 605,
+            "y": 301,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-11.593297435998352 511.36694406234784 -12.549017700944432 4.173153089061145 171.25974471934495 5.940378841581264 1194.4972618797115 4.135914673521825 1192.1027946810418 462.6543412716125 1019.8474051688975 367.32216005305935 880.9915090214855 290.4744312691863 753.9317173594771 220.1550809218915 679.7876621588464 299.81532201447055 542.916527659621 389.8024214918618 223.5387421656544 613.9026017668875"
+        },
+        {
+            "type": "Polygon",
+            "id": "011e072c-a10d-4263-a375-c5fa818e68b2",
+            "label": "obs_grotto_leftbottom_outside",
+            "displayName": "obs_grotto_leftbottom_outside",
+            "useGameObjectName": true,
+            "x": 265,
+            "y": 732,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "69.30507996946875 148.48916460726213 70.4132286668248 29.16944659504844 64.07053508559147 -101.51405408715942 332.32491132833326 -1.1032494244924749 732.8918616225751 162.24816647199796 215.3330840420903 153.6365308642051"
+        },
+        {
+            "type": "Polygon",
+            "id": "e7590539-40f5-4a8e-982a-dae6f988a850",
+            "label": "obs_grotto_right",
+            "displayName": "obs_grotto_right",
+            "useGameObjectName": true,
+            "x": 1245,
+            "y": 558,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-29.288933487029993 474.3595291000039 -290.9692147588345 479.6006941668196 -443.39498498707906 375.12180466549904 -253.908629877049 199.5188919984597 -34.823091216266505 35.62284017588962 82.30462939171923 -94.48137269130191 146.09678459138718 44.77443422938887 367.91051129588925 181.12239638572225 364.8825861877563 473.7939174974545"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

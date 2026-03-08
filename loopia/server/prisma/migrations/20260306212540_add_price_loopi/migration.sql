@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Item" ADD COLUMN     "priceLoopi" INTEGER NOT NULL DEFAULT 0;

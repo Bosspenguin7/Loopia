@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "lib": [
+      "es2022"
+    ],
+    "outDir": "./lib",
+    "rootDir": "..",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true
+  },
+  "include": ["src", "../shared"],
+  "exclude": ["prisma", "node_modules"]
+}

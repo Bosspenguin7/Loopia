@@ -1,0 +1,23 @@
+{
+  "name": "loopia-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "watch-scene": "node scripts/watch_scene.cjs",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "sync-obs": "node scripts/sync_obstacles.cjs"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "@colyseus/schema": "^3.0.76",
+    "colyseus.js": "^0.16.22",
+    "easystarjs": "^0.4.4",
+    "phaser": "^3.90.0"
+  }
+}

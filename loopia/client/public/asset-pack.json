@@ -1,0 +1,361 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "public/assets/apartment/ground.png",
+                "type": "image",
+                "key": "apt_ground"
+            },
+            {
+                "url": "public/assets/apartment/sofa.png",
+                "type": "image",
+                "key": "apt_sofa"
+            },
+            {
+                "url": "public/assets/apartment/wall.png",
+                "type": "image",
+                "key": "apt_wall"
+            },
+            {
+                "url": "public/assets/apartment/desk.png",
+                "type": "image",
+                "key": "apt_desk"
+            },
+            {
+                "url": "public/assets/apartment/bed.png",
+                "type": "image",
+                "key": "apt_bed"
+            },
+            {
+                "url": "public/assets/bands/desk.png",
+                "type": "image",
+                "key": "bands_desk"
+            },
+            {
+                "url": "public/assets/bands/desk2.png",
+                "type": "image",
+                "key": "bands_desk2"
+            },
+            {
+                "url": "public/assets/bands/desk3.png",
+                "type": "image",
+                "key": "bands_desk3"
+            },
+            {
+                "url": "public/assets/bands/bandsfloor.png",
+                "type": "image",
+                "key": "bands_floor"
+            },
+            {
+                "url": "public/assets/map0/lamp.png",
+                "type": "image",
+                "key": "bands_lamp"
+            },
+            {
+                "url": "public/assets/bands/picture.png",
+                "type": "image",
+                "key": "bands_picture"
+            },
+            {
+                "url": "public/assets/bands/picture2.png",
+                "type": "image",
+                "key": "bands_picture2"
+            },
+            {
+                "url": "public/assets/bands/picture3.png",
+                "type": "image",
+                "key": "bands_picture3"
+            },
+            {
+                "url": "public/assets/bands/plant.png",
+                "type": "image",
+                "key": "bands_plant"
+            },
+            {
+                "url": "public/assets/bands/sofa1.png",
+                "type": "image",
+                "key": "bands_sofa1"
+            },
+            {
+                "url": "public/assets/bands/sofa2.png",
+                "type": "image",
+                "key": "bands_sofa2"
+            },
+            {
+                "url": "public/assets/bands/bandswall.png",
+                "type": "image",
+                "key": "bands_wall"
+            },
+            {
+                "url": "public/assets/common/walkanim.png",
+                "type": "spritesheet",
+                "key": "character",
+                "frameConfig": {
+                    "frameWidth": 368,
+                    "frameHeight": 868
+                }
+            },
+            {
+                "url": "public/assets/common/walkback.png",
+                "type": "spritesheet",
+                "key": "character_back",
+                "frameConfig": {
+                    "frameWidth": 368,
+                    "frameHeight": 868
+                }
+            },
+            {
+                "url": "public/assets/common/newalk.png",
+                "type": "spritesheet",
+                "key": "character_ne",
+                "frameConfig": {
+                    "frameWidth": 368,
+                    "frameHeight": 868
+                }
+            },
+            {
+                "url": "public/assets/map0/lamp.png",
+                "type": "image",
+                "key": "lamp"
+            },
+            {
+                "url": "public/assets/map0/pool.png",
+                "type": "image",
+                "key": "pool"
+            },
+            {
+                "url": "public/assets/map0/tree.png",
+                "type": "image",
+                "key": "tree"
+            },
+            {
+                "url": "public/assets/cafe/ground.png",
+                "type": "image",
+                "key": "cafe_ground"
+            },
+            {
+                "url": "public/assets/cafe/wall.png",
+                "type": "image",
+                "key": "cafe_wall"
+            },
+            {
+                "url": "public/assets/cafe/bar.png",
+                "type": "image",
+                "key": "cafe_bar"
+            },
+            {
+                "url": "public/assets/cafe/seats1.png",
+                "type": "image",
+                "key": "cafe_seats1"
+            },
+            {
+                "url": "public/assets/cafe/seats2.png",
+                "type": "image",
+                "key": "cafe_seats2"
+            },
+            {
+                "url": "public/assets/cafe/bistro.png",
+                "type": "image",
+                "key": "cafe_bistro"
+            },
+            {
+                "url": "public/assets/cafe/dj.png",
+                "type": "image",
+                "key": "cafe_dj"
+            },
+            {
+                "url": "public/assets/cafe/coffee.png",
+                "type": "image",
+                "key": "cafe_coffee"
+            },
+            {
+                "url": "public/assets/cafe/sandwich.png",
+                "type": "image",
+                "key": "cafe_sandwich"
+            },
+            {
+                "url": "public/assets/cafe/hamburger.png",
+                "type": "image",
+                "key": "cafe_hamburger"
+            },
+            {
+                "url": "public/assets/map0/bushes_new.png",
+                "type": "image",
+                "key": "bushes_new"
+            },
+            {
+                "url": "public/assets/map0/ground_new.png",
+                "type": "image",
+                "key": "ground_new"
+            },
+            {
+                "url": "public/assets/map0/houses1.png",
+                "type": "image",
+                "key": "houses1"
+            },
+            {
+                "url": "public/assets/map0/l1_new.png",
+                "type": "image",
+                "key": "l1_new"
+            },
+            {
+                "url": "public/assets/map0/cars.png",
+                "type": "image",
+                "key": "cars"
+            },
+            {
+                "url": "public/assets/map0/border1.png",
+                "type": "image",
+                "key": "border1"
+            },
+            {
+                "url": "public/assets/map0/border2.png",
+                "type": "image",
+                "key": "border2"
+            },
+            {
+                "url": "public/assets/map0/kiosk.png",
+                "type": "image",
+                "key": "kiosk"
+            },
+            {
+                "url": "public/assets/map0/billboard.png",
+                "type": "image",
+                "key": "billboard"
+            },
+            {
+                "url": "public/assets/map0/wolfie.png",
+                "type": "image",
+                "key": "wolfie"
+            },
+            {
+                "url": "public/assets/map0/fireplug.png",
+                "type": "image",
+                "key": "fireplug"
+            },
+            {
+                "url": "public/assets/map0/bench.png",
+                "type": "image",
+                "key": "bench"
+            },
+            {
+                "url": "public/assets/map0/bank2.png",
+                "type": "image",
+                "key": "bank2"
+            },
+            {
+                "url": "public/assets/map0/trashbin.png",
+                "type": "image",
+                "key": "trashbin"
+            },
+            {
+                "url": "public/assets/avalabs/ground.png",
+                "type": "image",
+                "key": "avalabs_ground"
+            },
+            {
+                "url": "public/assets/avalabs/wall.png",
+                "type": "image",
+                "key": "avalabs_wall"
+            },
+            {
+                "url": "public/assets/avalabs/desk.png",
+                "type": "image",
+                "key": "avalabs_desk"
+            },
+            {
+                "url": "public/assets/avalabs/table.png",
+                "type": "image",
+                "key": "avalabs_table"
+            },
+            {
+                "url": "public/assets/avalabs/chair1.png",
+                "type": "image",
+                "key": "avalabs_chair1"
+            },
+            {
+                "url": "public/assets/avalabs/chair2.png",
+                "type": "image",
+                "key": "avalabs_chair2"
+            },
+            {
+                "url": "public/assets/avalabs/chair3.png",
+                "type": "image",
+                "key": "avalabs_chair3"
+            },
+            {
+                "url": "public/assets/grotto/ground.png",
+                "type": "image",
+                "key": "grotto_ground"
+            },
+            {
+                "url": "public/assets/grotto/walls1.png",
+                "type": "image",
+                "key": "grotto_walls1"
+            },
+            {
+                "url": "public/assets/grotto/walls2.png",
+                "type": "image",
+                "key": "grotto_walls2"
+            },
+            {
+                "url": "public/assets/npc/avery.png",
+                "type": "image",
+                "key": "npc_avery"
+            },
+            {
+                "url": "public/assets/npc/emin_hoca.png",
+                "type": "image",
+                "key": "npc_emin_hoca"
+            },
+            {
+                "url": "public/assets/npc/holly.png",
+                "type": "image",
+                "key": "npc_holly"
+            },
+            {
+                "url": "public/assets/npc/kahnwald.png",
+                "type": "image",
+                "key": "npc_kahnwald"
+            },
+            {
+                "url": "public/assets/npc/vohvoh.png",
+                "type": "image",
+                "key": "npc_vohvoh"
+            },
+            {
+                "url": "public/assets/npc/wrath.png",
+                "type": "image",
+                "key": "npc_wrath"
+            },
+            {
+                "url": "public/assets/ui/arrow-northeast.png",
+                "type": "image",
+                "key": "arrow-northeast"
+            },
+            {
+                "url": "public/assets/ui/arrow-northwest.png",
+                "type": "image",
+                "key": "arrow-northwest"
+            },
+            {
+                "url": "public/assets/ui/arrow-southeast.png",
+                "type": "image",
+                "key": "arrow-southeast"
+            },
+            {
+                "url": "public/assets/ui/arrow-southwest.png",
+                "type": "image",
+                "key": "arrow-southwest"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": true,
+        "visible": true
+    }
+}

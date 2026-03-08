@@ -1,0 +1,290 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Room {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique // used as roomLabel (e.g. "room_1")
+  displayName String   // shown in lobby (e.g. "Room 1")
+  maxClients  Int      @default(50)
+  roomType    String   @default("game_room") // colyseus room type
+  sceneKey    String   @default("Scene") // client scene key
+  isActive    Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Account {
+  id               Int             @id @default(autoincrement())
+  guestToken       String          @unique
+  displayName      String          @default("")
+  motto            String          @default("")
+  respectsReceived Int             @default(0)
+  credits          Int             @default(0)
+  duckets          Int             @default(0)
+  loginStreak      Int             @default(0)
+  lastLoginRewardAt DateTime?
+  twitterId        String?         @unique
+  twitterUsername  String?
+  twitterAvatar    String?
+  twitterVisible   Boolean         @default(false)
+  authMethod       String          @default("guest") // "guest" | "twitter"
+  walletAddress    String?         @unique
+  encryptedKey     String?         // AES-256-GCM encrypted private key
+  xp               Int             @default(0)
+  level            Int             @default(1)
+  createdAt        DateTime        @default(now())
+  lastSeenAt       DateTime        @default(now())
+  sessions         PlayerSession[]
+
+  friendshipsInitiated Friendship[]    @relation("friendships_initiated")
+  friendshipsReceived  Friendship[]    @relation("friendships_received")
+  messagesSent         DirectMessage[] @relation("messages_sent")
+  messagesReceived     DirectMessage[] @relation("messages_received")
+  blocksInitiated      BlockEntry[]    @relation("blocks_initiated")
+  blocksReceived       BlockEntry[]    @relation("blocks_received")
+  respectsGiven        RespectLog[]    @relation("respects_given")
+  respectsRecvLogs     RespectLog[]    @relation("respects_received")
+  transactionsOwn      CurrencyTransaction[] @relation("transactions_own")
+  transactionsSource   CurrencyTransaction[] @relation("transactions_source")
+  inventoryItems       InventoryItem[]
+  purchases            Purchase[]
+  questCompletions     QuestCompletion[]
+  questSubmissions     QuestSubmission[]
+  questStreaks          QuestStreak[]
+  fishInventory        FishInventory[]
+
+  @@map("Account")
+  @@index([guestToken])
+  @@index([twitterId])
+}
+
+model PlayerSession {
+  id        Int       @id @default(autoincrement())
+  sessionId String
+  name      String
+  roomName  String
+  roomType  String
+  ip        String    @default("")
+  guestId   Int?
+  guest     Account? @relation(fields: [guestId], references: [id])
+  joinedAt  DateTime  @default(now())
+  leftAt    DateTime?
+
+  @@index([roomName])
+  @@index([joinedAt])
+  @@index([ip])
+  @@index([guestId])
+}
+
+model BanEntry {
+  id         Int       @id @default(autoincrement())
+  identifier String    // IP address
+  reason     String    @default("")
+  bannedAt   DateTime  @default(now())
+  expiresAt  DateTime? // null = permanent
+
+  @@index([identifier])
+}
+
+model SystemMessage {
+  id         Int      @id @default(autoincrement())
+  message    String
+  targetRoom String?  // null = all rooms
+  active     Boolean  @default(true)
+  createdAt  DateTime @default(now())
+}
+
+model Friendship {
+  id        Int      @id @default(autoincrement())
+  guestId   Int
+  friendId  Int
+  status    String   @default("pending") // "pending" | "accepted"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  guest     Account @relation("friendships_initiated", fields: [guestId], references: [id])
+  friend    Account @relation("friendships_received", fields: [friendId], references: [id])
+
+  @@unique([guestId, friendId])
+  @@index([guestId, status])
+  @@index([friendId, status])
+}
+
+model DirectMessage {
+  id         Int      @id @default(autoincrement())
+  senderId   Int
+  receiverId Int
+  message    String
+  isRead     Boolean  @default(false)
+  createdAt  DateTime @default(now())
+
+  sender   Account @relation("messages_sent", fields: [senderId], references: [id])
+  receiver Account @relation("messages_received", fields: [receiverId], references: [id])
+
+  @@index([receiverId, isRead])
+  @@index([senderId, receiverId, createdAt])
+}
+
+model BlockEntry {
+  id        Int      @id @default(autoincrement())
+  blockerId Int
+  blockedId Int
+  createdAt DateTime @default(now())
+
+  blocker Account @relation("blocks_initiated", fields: [blockerId], references: [id])
+  blocked Account @relation("blocks_received", fields: [blockedId], references: [id])
+
+  @@unique([blockerId, blockedId])
+  @@index([blockerId])
+  @@index([blockedId])
+}
+
+model RespectLog {
+  id         Int      @id @default(autoincrement())
+  giverId    Int
+  receiverId Int
+  givenAt    DateTime @default(now())
+
+  giver    Account @relation("respects_given", fields: [giverId], references: [id])
+  receiver Account @relation("respects_received", fields: [receiverId], references: [id])
+
+  @@index([giverId, givenAt])
+  @@index([receiverId])
+}
+
+model CurrencyTransaction {
+  id           Int      @id @default(autoincrement())
+  guestId      Int
+  currency     String
+  amount       Int
+  reason       String
+  balanceAfter Int
+  sourceId     Int?
+  createdAt    DateTime @default(now())
+
+  guest  Account  @relation("transactions_own", fields: [guestId], references: [id])
+  source Account? @relation("transactions_source", fields: [sourceId], references: [id])
+
+  @@index([guestId, createdAt])
+  @@index([guestId, currency])
+}
+
+model Item {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String   @default("")
+  category    String   @default("cosmetic")
+  priceAvax   String   // stored as string for decimal precision (e.g. "0.01")
+  priceLoopi  Int      @default(0)
+  iconEmoji   String   @default("")
+  isActive    Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  inventoryItems InventoryItem[]
+  purchases      Purchase[]
+}
+
+model InventoryItem {
+  id        Int      @id @default(autoincrement())
+  guestId   Int
+  itemId    Int
+  quantity  Int      @default(1)
+  createdAt DateTime @default(now())
+
+  guest Account @relation(fields: [guestId], references: [id])
+  item  Item    @relation(fields: [itemId], references: [id])
+
+  @@unique([guestId, itemId])
+  @@index([guestId])
+}
+
+model Purchase {
+  id           Int      @id @default(autoincrement())
+  guestId      Int
+  itemId       Int
+  priceAvax    String
+  txHash       String
+  contractAddr String
+  createdAt    DateTime @default(now())
+
+  guest Account @relation(fields: [guestId], references: [id])
+  item  Item    @relation(fields: [itemId], references: [id])
+
+  @@index([guestId])
+  @@index([txHash])
+}
+
+model Quest {
+  id             Int      @id @default(autoincrement())
+  questKey       String   @unique
+  name           String
+  description    String
+  npcName        String
+  sceneKey       String
+  questType      String
+  loopiReward    Int      @default(0)
+  xpReward       Int      @default(0)
+  requiresReview Boolean  @default(false)
+  isActive       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  completions    QuestCompletion[]
+  submissions    QuestSubmission[]
+  streaks        QuestStreak[]
+}
+
+model QuestCompletion {
+  id          Int      @id @default(autoincrement())
+  guestId     Int
+  questId     Int
+  completedAt DateTime @default(now())
+  guest       Account  @relation(fields: [guestId], references: [id])
+  quest       Quest    @relation(fields: [questId], references: [id])
+  @@index([guestId, questId, completedAt])
+}
+
+model QuestSubmission {
+  id          Int       @id @default(autoincrement())
+  guestId     Int
+  questId     Int
+  linkUrl     String
+  status      String    @default("pending")
+  submittedAt DateTime  @default(now())
+  reviewedAt  DateTime?
+  reviewedBy  String?
+  reviewNotes String?
+  guest       Account   @relation(fields: [guestId], references: [id])
+  quest       Quest     @relation(fields: [questId], references: [id])
+  @@index([status])
+  @@index([guestId, questId])
+}
+
+model QuestStreak {
+  id              Int       @id @default(autoincrement())
+  guestId         Int
+  questId         Int
+  currentStreak   Int       @default(0)
+  longestStreak   Int       @default(0)
+  lastCompletedAt DateTime?
+  badgeEarned     Boolean   @default(false)
+  badgeEarnedAt   DateTime?
+  guest           Account   @relation(fields: [guestId], references: [id])
+  quest           Quest     @relation(fields: [questId], references: [id])
+  @@unique([guestId, questId])
+}
+
+model FishInventory {
+  id       Int      @id @default(autoincrement())
+  guestId  Int
+  fishType String   @default("salmon")
+  quantity Int      @default(0)
+  guest    Account  @relation(fields: [guestId], references: [id])
+  @@unique([guestId, fishType])
+}

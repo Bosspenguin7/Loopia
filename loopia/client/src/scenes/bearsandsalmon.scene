@@ -1,0 +1,405 @@
+{
+    "id": "026dfad8-fc4d-40ca-bd49-ae797f4625dd",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "bearsandsalmon",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1200,
+        "borderHeight": 750
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0001-4000-8000-000000000001",
+            "label": "bands_floor",
+            "texture": {
+                "key": "bands_floor"
+            },
+            "x": 592.5,
+            "y": 480,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0002-4000-8000-000000000002",
+            "label": "bands_wall",
+            "texture": {
+                "key": "bands_wall"
+            },
+            "x": 592.5,
+            "y": 232.5,
+            "scaleX": 0.6,
+            "scaleY": 0.6
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0003-4000-8000-000000000003",
+            "label": "bands_picture",
+            "texture": {
+                "key": "bands_picture"
+            },
+            "x": 304.5,
+            "y": 180,
+            "scaleX": 0.675,
+            "scaleY": 0.675
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0004-4000-8000-000000000004",
+            "label": "bands_picture2",
+            "texture": {
+                "key": "bands_picture2"
+            },
+            "x": 934.5,
+            "y": 238.5,
+            "scaleX": 0.75,
+            "scaleY": 0.75
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0005-4000-8000-000000000005",
+            "label": "bands_picture3",
+            "texture": {
+                "key": "bands_picture3"
+            },
+            "x": 805.5,
+            "y": 178.5,
+            "scaleX": 0.75,
+            "scaleY": 0.75
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0006-4000-8000-000000000006",
+            "label": "bands_plant",
+            "texture": {
+                "key": "bands_plant"
+            },
+            "x": 292.5,
+            "y": 321,
+            "scaleX": 0.825,
+            "scaleY": 0.825
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0007-4000-8000-000000000007",
+            "label": "bands_desk",
+            "texture": {
+                "key": "bands_desk"
+            },
+            "x": 771,
+            "y": 312,
+            "scaleX": 0.675,
+            "scaleY": 0.675
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0008-4000-8000-000000000008",
+            "label": "bands_desk2",
+            "texture": {
+                "key": "bands_desk2"
+            },
+            "x": 457.5,
+            "y": 549,
+            "scaleX": 0.825,
+            "scaleY": 0.825
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-0009-4000-8000-000000000009",
+            "label": "bands_desk3",
+            "texture": {
+                "key": "bands_desk3"
+            },
+            "x": 705,
+            "y": 552,
+            "scaleX": 0.825,
+            "scaleY": 0.825
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-000b-4000-8000-00000000000b",
+            "label": "bands_sofa1",
+            "texture": {
+                "key": "bands_sofa1"
+            },
+            "x": 877,
+            "y": 562,
+            "scaleX": 0.75,
+            "scaleY": 0.75
+        },
+        {
+            "type": "Image",
+            "id": "a1b2c3d4-000c-4000-8000-00000000000c",
+            "label": "bands_sofa2",
+            "texture": {
+                "key": "bands_sofa2"
+            },
+            "x": 334.5,
+            "y": 576,
+            "scaleX": 0.75,
+            "scaleY": 0.75
+        },
+        {
+            "type": "Image",
+            "id": "1e69b4f4-d260-4d79-88db-6ece186576a0",
+            "label": "bands_plant_1",
+            "texture": {
+                "key": "bands_plant"
+            },
+            "x": 367.5,
+            "y": 286.5,
+            "scaleX": 0.825,
+            "scaleY": 0.825
+        },
+        {
+            "type": "Polygon",
+            "id": "8f9cb8cf-1785-450d-a489-0dc6ae0d1c6f",
+            "label": "bearsandsalmon_inside_door",
+            "displayName": "bearsandsalmon_inside_door",
+            "useGameObjectName": true,
+            "x": 156,
+            "y": 445.5,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "82.57898333011211 185.3407404068008 -17.644645343908074 133.17444301239607 50.37418436458999 87.76242441930522 155.7885332407447 141.51255351714255"
+        },
+        {
+            "type": "Image",
+            "id": "5a76ab74-a1a3-49ff-a286-f2d8f6273b8d",
+            "label": "bands_sofa",
+            "texture": {
+                "key": "bands_sofa1"
+            },
+            "x": 733,
+            "y": 635,
+            "scaleX": 0.75,
+            "scaleY": 0.75
+        },
+        {
+            "type": "Image",
+            "id": "ceb8fff2-17fd-448e-8c12-a889b1a51cd2",
+            "label": "bands_sofa_1",
+            "texture": {
+                "key": "bands_sofa2"
+            },
+            "x": 459,
+            "y": 637.5,
+            "scaleX": 0.75,
+            "scaleY": 0.75
+        },
+        {
+            "type": "Image",
+            "id": "818f9c6c-5673-48ea-8212-0e713720e195",
+            "label": "bands_plant_2",
+            "texture": {
+                "key": "bands_plant"
+            },
+            "x": 597,
+            "y": 694.5,
+            "scaleX": 0.825,
+            "scaleY": 0.825
+        },
+        {
+            "type": "Polygon",
+            "id": "c54b3824-46aa-40bf-901d-8861b28f5c53",
+            "label": "npc_giga",
+            "displayName": "npc_giga",
+            "useGameObjectName": true,
+            "x": 539,
+            "y": 309,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "178.1862716073749 28.520789521469304 175.37254321474978 -5.018310387723133 179.37254321474978 -51.51880994904786 207.90686419631254 -44.92308361561404 209.1862716073749 -0.9230836156140398 205.1862716073749 38.63502281972406"
+        },
+        {
+            "type": "Polygon",
+            "id": "dd9cad08-5f93-49e0-8ee4-6f0e59cb5c31",
+            "label": "npc_secretsmo",
+            "displayName": "npc_secretsmo",
+            "useGameObjectName": true,
+            "x": 674,
+            "y": 377,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "178.1862716073749 28.520789521469304 175.37254321474978 -5.018310387723133 179.37254321474978 -51.51880994904786 207.90686419631254 -44.92308361561404 209.1862716073749 -0.9230836156140398 205.1862716073749 38.63502281972406"
+        },
+        {
+            "type": "Polygon",
+            "id": "b41cb2c4-d5c6-4a12-bac8-74014042191b",
+            "label": "obs_bears_left_wall",
+            "displayName": "obs_bears_left_wall",
+            "useGameObjectName": true,
+            "x": 290,
+            "y": 218,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "0.24930837249962678 536.9761375313483 -1.1848928573002837 -9.311365332827194 74.52232974087735 -8.47351163327707 595.4494653722861 -10.20629372191388 595.2018340580323 238.84795571399786 179.09598914269958 447.40114341296595"
+        },
+        {
+            "type": "Polygon",
+            "id": "77a09fd4-dd8c-4355-8988-effd217d7bb7",
+            "label": "obs_bears_right_wall",
+            "displayName": "obs_bears_right_wall",
+            "useGameObjectName": true,
+            "x": 898,
+            "y": 187,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "0.061716579801952776 254.78926300644108 2.5907715833209295 171.63424244146466 6.432332103005251 30.783056630370993 68.07896802760729 40.82481646652599 633.5294213911363 88.73343181608837 634.4689469744565 187.25242232418987 610.1863136508384 558.0990549412711"
+        },
+        {
+            "type": "Polygon",
+            "id": "37d1fcf7-b246-4d4d-99a1-5d00582d3105",
+            "label": "obs_bears_desk",
+            "displayName": "obs_bears_desk",
+            "useGameObjectName": true,
+            "x": 824,
+            "y": 304,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "42.32571545008943 188.3297787099824 -51.17319252936079 137.45631886902748 -52.61747295231427 82.19535174179936 81.47516292041257 15.901311969709184 418.9249023135756 132.54992922256082 419.05481487492193 240.1488122380846 275.14666725571556 308.17488096486653"
+        },
+        {
+            "type": "Polygon",
+            "id": "dd20fbac-5345-4e42-a80b-c2d91d108268",
+            "label": "obs_bears_right_outside",
+            "displayName": "obs_bears_right_outside",
+            "useGameObjectName": true,
+            "x": 1193,
+            "y": 525,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "58.085895943065026 448.0841707580301 -293.46024455884884 419.23538687776954 324.9718996191467 110.30327620964391 332.5274414111839 293.7229286054105 334.5131974643713 448.0841707580301"
+        },
+        {
+            "type": "Polygon",
+            "id": "46d53e57-0cd7-42a9-b46d-1fbbde2fa3c8",
+            "label": "obs_bears_left_outside",
+            "displayName": "obs_bears_left_outside",
+            "useGameObjectName": true,
+            "x": 305,
+            "y": 679,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "10.323162778711549 221.15377073811993 0 50 3.1655330485546784 22.918837074141138 3.7898271099948033 -57.0397027161051 85.13157409092338 -18.03863003875972 62.85550067723577 -8.557370826567208 157.828107139301 43.393320395473154 183.7896150094088 33.00871724743007 430.7468541534067 157.69863622969353 591.255659465282 237.01474335011454 624.4541861837745 234.77637034766906 166.09220999935826 226.5681168274279"
+        },
+        {
+            "type": "Polygon",
+            "id": "07c82e72-bd51-405e-8333-2c46839fd0f4",
+            "label": "obs_bears_plant2",
+            "displayName": "obs_bears_plant2",
+            "useGameObjectName": true,
+            "x": 377,
+            "y": 309,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "28.257663420575483 71.1174061452192 -9.68297378267635 52.249406331006526 -9.00532769263701 15.16946958810356 26.843871954367117 -2.315018873869178 62.22137160601592 12.336831338953694 64.05921704900456 54.31760924105225"
+        },
+        {
+            "type": "Polygon",
+            "id": "0d41cd90-8547-4b9f-addb-270d45141b6d",
+            "label": "obs_bears_plant1",
+            "displayName": "obs_bears_plant1",
+            "useGameObjectName": true,
+            "x": 301,
+            "y": 341,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "28.257663420575483 71.1174061452192 -9.68297378267635 52.249406331006526 -9.00532769263701 15.16946958810356 26.843871954367117 -2.315018873869178 62.22137160601592 12.336831338953694 64.05921704900456 54.31760924105225"
+        },
+        {
+            "type": "Polygon",
+            "id": "9f22ab65-3ee3-4d73-a47d-057cfe8619f1",
+            "label": "obs_bears_plant3",
+            "displayName": "obs_bears_plant3",
+            "useGameObjectName": true,
+            "x": 601,
+            "y": 714,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "28.257663420575483 71.1174061452192 -9.68297378267635 52.249406331006526 -9.00532769263701 15.16946958810356 26.843871954367117 -2.315018873869178 62.22137160601592 12.336831338953694 64.05921704900456 54.31760924105225"
+        },
+        {
+            "type": "Polygon",
+            "id": "f5359bd0-909a-41b8-8130-e9784365c784",
+            "label": "obs_bears_sofa1",
+            "displayName": "obs_bears_sofa1",
+            "useGameObjectName": true,
+            "x": 326,
+            "y": 593,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "51.71372749921592 79.31907436919894 8.109744831397705 57.46798197011562 8.95741640068293 -18.75271748709951 35.61686716026105 -7.982329282409964 109.22859827229873 32.90722362015899 132.84164583979333 61.492805556195066 139.11809709554905 89.46514853242527 108.97865930371002 105.29000679829318"
+        },
+        {
+            "type": "Polygon",
+            "id": "ffd773fb-7ec8-497d-b0ca-19abd069e220",
+            "label": "obs_bears_sofa2",
+            "displayName": "obs_bears_sofa2",
+            "useGameObjectName": true,
+            "x": 450,
+            "y": 655,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "51.71372749921592 79.31907436919894 8.109744831397705 57.46798197011562 8.95741640068293 -18.75271748709951 35.61686716026105 -7.982329282409964 109.22859827229873 32.90722362015899 132.84164583979333 61.492805556195066 139.11809709554905 89.46514853242527 108.97865930371002 105.29000679829318"
+        },
+        {
+            "type": "Polygon",
+            "id": "bb75d341-b461-42a8-bbeb-f2ad648fa1cd",
+            "label": "obs_bears_sofa3",
+            "displayName": "obs_bears_sofa3",
+            "useGameObjectName": true,
+            "x": 738,
+            "y": 634,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-5.1686111869341005 108.53788766935203 -5.4222494878236915 78.39844987751304 20.949944259611414 48.25901208567406 131.40022455564514 0.8569173996553587 134.96632738674634 44.43794201547628 132.15371050044115 73.9421036193176 34.95402362176043 124.53954306135395"
+        },
+        {
+            "type": "Polygon",
+            "id": "baf00ce0-3ba8-4f34-8e8e-799a2c24f2fc",
+            "label": "obs_bears_sofa4",
+            "displayName": "obs_bears_sofa4",
+            "useGameObjectName": true,
+            "x": 881,
+            "y": 562,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "-5.1686111869341005 108.53788766935203 -5.4222494878236915 78.39844987751304 20.949944259611414 48.25901208567406 131.40022455564514 0.8569173996553587 134.96632738674634 44.43794201547628 132.15371050044115 73.9421036193176 34.95402362176043 124.53954306135395"
+        },
+        {
+            "type": "Polygon",
+            "id": "fdf72f41-e41a-4b73-a08a-84d3e9668466",
+            "label": "obs_bears_desk2",
+            "displayName": "obs_bears_desk2",
+            "useGameObjectName": true,
+            "x": 455,
+            "y": 525,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "1.4306021918987994 104.7927978288617 0 50 57.88318763794541 22.435338791867125 134.73875400713484 62.26798692330925 186.7292841980571 88.37145183319936 184.94810399308486 136.59455230014171 126.04373920304457 169.72338790270481"
+        },
+        {
+            "type": "Polygon",
+            "id": "e276a656-bb49-4d5e-b4dd-ff312a03681a",
+            "label": "obs_bears_desk3",
+            "displayName": "obs_bears_desk3",
+            "useGameObjectName": true,
+            "x": 701,
+            "y": 525,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "72.02438457190405 152.61644355192777 0.794668251024305 120.18635716639704 74.96527313825104 78.77334931636554 132.1238146876912 45.86053916443019 196.7230360050021 82.72309463347348 135.31720393476596 118.70810439055222"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
