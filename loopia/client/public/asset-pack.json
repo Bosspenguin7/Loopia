@@ -329,6 +329,46 @@
                 "key": "npc_wrath"
             },
             {
+                "url": "public/assets/map1/ground.png",
+                "type": "image",
+                "key": "map1_ground"
+            },
+            {
+                "url": "public/assets/map1/market.png",
+                "type": "image",
+                "key": "map1_market"
+            },
+            {
+                "url": "public/assets/map1/pangolin_team.png",
+                "type": "image",
+                "key": "map1_pangolin_team"
+            },
+            {
+                "url": "public/assets/map1/avax_fdn.png",
+                "type": "image",
+                "key": "map1_avax_fdn"
+            },
+            {
+                "url": "public/assets/map1/avax_logo.png",
+                "type": "image",
+                "key": "map1_avax_logo"
+            },
+            {
+                "url": "public/assets/map1/agac2.png",
+                "type": "image",
+                "key": "map1_agac2"
+            },
+            {
+                "url": "public/assets/map1/bank2.png",
+                "type": "image",
+                "key": "map1_bank2"
+            },
+            {
+                "url": "public/assets/apartment/tv.png",
+                "type": "image",
+                "key": "apt_tv"
+            },
+            {
                 "url": "public/assets/ui/arrow-northeast.png",
                 "type": "image",
                 "key": "arrow-northeast"

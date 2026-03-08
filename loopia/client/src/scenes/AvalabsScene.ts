@@ -156,8 +156,8 @@ export class AvalabsScene extends avalabs {
             reconnect: true,
             playerName: this.behavior.network?.playerName || 'Player',
             roomLabel: this.roomLabel,
-            spawnX: 1026 + 65,
-            spawnY: 425 + 10
+            spawnX: 1020,
+            spawnY: 420
         });
     }
 

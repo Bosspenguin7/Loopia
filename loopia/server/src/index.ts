@@ -11,6 +11,7 @@ import { BearsAndSalmonRoom } from "./rooms/BearsAndSalmonRoom";
 import { ApartmentRoom } from "./rooms/ApartmentRoom";
 import { AvalabsRoom } from "./rooms/AvalabsRoom";
 import { GrottoRoom } from "./rooms/GrottoRoom";
+import { SecondMapRoom } from "./rooms/SecondMapRoom";
 import { monitor } from "@colyseus/monitor";
 import prisma from "./db/prisma";
 import { adminRouter } from "./admin/adminRoutes";
@@ -59,6 +60,7 @@ gameServer.define(ROOM_TYPES.BEARS, BearsAndSalmonRoom).filterBy(['roomLabel']);
 gameServer.define(ROOM_TYPES.APARTMENT, ApartmentRoom).filterBy(['roomLabel']);
 gameServer.define(ROOM_TYPES.AVALABS, AvalabsRoom).filterBy(['roomLabel']);
 gameServer.define(ROOM_TYPES.GROTTO, GrottoRoom).filterBy(['roomLabel']);
+gameServer.define(ROOM_TYPES.SECONDMAP, SecondMapRoom).filterBy(['roomLabel']);
 
 app.get("/api/rooms", async (_req, res) => {
     try {

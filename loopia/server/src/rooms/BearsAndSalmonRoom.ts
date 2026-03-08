@@ -11,8 +11,8 @@ export class BearsAndSalmonRoom extends BaseRoom {
             obstacleKey: ROOM_TYPES.BEARS,
             speed: PLAYER_SPEED,
             logPrefix: 'BEARS',
-            welcomeMsg: 'ayılara katıldı!',
-            leaveMsg: 'ayılardan ayrıldı.',
+            welcomeMsg: 'joined Bears & Salmon!',
+            leaveMsg: 'left Bears & Salmon.',
         };
     }
 

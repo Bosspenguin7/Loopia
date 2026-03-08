@@ -5,6 +5,7 @@ import { BearsAndSalmonScene } from './scenes/BearsAndSalmonScene';
 import { ApartmentScene } from './scenes/ApartmentScene';
 import { AvalabsScene } from './scenes/AvalabsScene';
 import { GrottoScene } from './scenes/GrottoScene';
+import { SecondMapScene } from './scenes/SecondMapScene';
 import { LobbyOverlay } from './ui/LobbyOverlay';
 import { LoadingScreen } from './ui/LoadingScreen';
 import { LoginScreen } from './ui/LoginScreen';
@@ -70,7 +71,7 @@ function showLobby() {
                 autoCenter: Phaser.Scale.CENTER_BOTH,
                 max: { width: 1200, height: 750 }
             },
-            scene: [GameScene, CafeScene, BearsAndSalmonScene, ApartmentScene, AvalabsScene, GrottoScene]
+            scene: [GameScene, CafeScene, BearsAndSalmonScene, ApartmentScene, AvalabsScene, GrottoScene, SecondMapScene]
         };
 
         game = new Phaser.Game(config);

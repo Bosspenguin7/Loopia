@@ -5,6 +5,8 @@ export interface DoorArrowConfig {
     y: number;
     /** Direction the arrow points: 'left' | 'right' | 'up' | 'down' */
     direction?: 'left' | 'right' | 'up' | 'down';
+    /** Optional scale override (default 0.3) */
+    scale?: number;
 }
 
 export interface DoorArrow {
@@ -55,8 +57,8 @@ export function createDoorArrow(scene: Phaser.Scene, config: DoorArrowConfig): D
 
     const arrow = scene.add.image(config.x, config.y, textureKey);
     arrow.setOrigin(0.5, 0.5);
-    arrow.setScale(0.3);
-    arrow.setDepth(1000);
+    arrow.setScale(config.scale ?? 0.3);
+    arrow.setDepth(5000);
     arrow.setVisible(false);
 
     // Isometric sway: tiny diagonal nudge in the arrow's direction

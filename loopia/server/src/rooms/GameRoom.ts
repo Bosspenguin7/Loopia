@@ -9,8 +9,8 @@ export class GameRoom extends BaseRoom {
             obstacleKey: ROOM_TYPES.GAME,
             speed: PLAYER_SPEED,
             logPrefix: 'GAME',
-            welcomeMsg: 'oyuna katıldı!',
-            leaveMsg: 'oyundan ayrıldı.',
+            welcomeMsg: 'joined the game!',
+            leaveMsg: 'left the game.',
         };
     }
 

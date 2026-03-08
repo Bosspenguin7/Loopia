@@ -1,5 +1,7 @@
 # Loopia
 
+**Play now at [play.loopia.world](https://play.loopia.world)**
+
 A browser-based MMORPG with real-time multiplayer, on-chain economy, and quest system.
 
 ## Tech Stack

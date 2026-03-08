@@ -219,8 +219,8 @@ export class GrottoScene extends grotto {
             reconnect: true,
             playerName: this.behavior.network?.playerName || 'Player',
             roomLabel: this.roomLabel,
-            spawnX: 826 + 39,
-            spawnY: 283 + 3
+            spawnX: 876,
+            spawnY: 300
         });
     }
 

@@ -11,8 +11,8 @@ export class ApartmentRoom extends BaseRoom {
             obstacleKey: ROOM_TYPES.APARTMENT,
             speed: PLAYER_SPEED,
             logPrefix: 'APT',
-            welcomeMsg: 'daireye girdi!',
-            leaveMsg: 'daireden ayrıldı.',
+            welcomeMsg: 'entered the apartment!',
+            leaveMsg: 'left the apartment.',
         };
     }
 

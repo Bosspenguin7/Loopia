@@ -1,0 +1,105 @@
+{
+    "id": "215714a2-d54e-48fb-bcfa-89d78c21ca22",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "SecondScene",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1200,
+        "borderHeight": 750
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "sm-ground-001",
+            "label": "map1_ground",
+            "texture": {
+                "key": "map1_ground"
+            },
+            "x": 600,
+            "y": 428,
+            "scaleX": 0.65,
+            "scaleY": 0.65
+        },
+        {
+            "type": "Image",
+            "id": "sm-market-001",
+            "label": "map1_market",
+            "texture": {
+                "key": "map1_market"
+            },
+            "x": 280,
+            "y": 342,
+            "scaleX": 0.65,
+            "scaleY": 0.65
+        },
+        {
+            "type": "Image",
+            "id": "sm-pangolin-001",
+            "label": "map1_pangolin_team",
+            "texture": {
+                "key": "map1_pangolin_team"
+            },
+            "x": 723,
+            "y": 163,
+            "scaleX": 0.65,
+            "scaleY": 0.65
+        },
+        {
+            "type": "Image",
+            "id": "sm-avaxfdn-001",
+            "label": "map1_avax_fdn",
+            "texture": {
+                "key": "map1_avax_fdn"
+            },
+            "x": 1067,
+            "y": 333,
+            "scaleX": 0.65,
+            "scaleY": 0.65
+        },
+        {
+            "type": "Image",
+            "id": "sm-avaxlogo-001",
+            "label": "map1_avax_logo",
+            "texture": {
+                "key": "map1_avax_logo"
+            },
+            "x": 661,
+            "y": 410,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Polygon",
+            "id": "sm-exitdoor-001",
+            "label": "secondscene_exit_door",
+            "displayName": "secondscene_exit_door",
+            "useGameObjectName": true,
+            "x": 100,
+            "y": 588,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "0 0 80 -40 80 30 0 70"
+        },
+        {
+            "type": "Polygon",
+            "id": "877af2f4-c1e4-4407-82e2-a3436f8d2ec3",
+            "label": "portal_scene1",
+            "displayName": "portal_scene1",
+            "useGameObjectName": true,
+            "x": 909,
+            "y": 318,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "points": "104.44332768587904 82.22815478633481 72.33928731107832 61.60495299740421 14.118277107502365 30.663893208452322 53.48981335589807 8.309224462158845 92.95723721783 26.11905623997707 121.51836113771733 42.68707276822097 119.76187946887367 72.89933820207752"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

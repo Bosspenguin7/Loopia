@@ -272,8 +272,8 @@ export class BearsAndSalmonScene extends bearsandsalmon {
             reconnect: true,
             playerName: this.behavior.network?.playerName || 'Player',
             roomLabel: this.roomLabel,
-            spawnX: 528 + 22,
-            spawnY: 213 + 60
+            spawnX: 490,
+            spawnY: 290
         });
     }
 

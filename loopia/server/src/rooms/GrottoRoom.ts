@@ -11,8 +11,8 @@ export class GrottoRoom extends BaseRoom {
             obstacleKey: ROOM_TYPES.GROTTO,
             speed: PLAYER_SPEED,
             logPrefix: 'GRT',
-            welcomeMsg: 'Grotto\'ya girdi!',
-            leaveMsg: 'Grotto\'dan ayrıldı.',
+            welcomeMsg: 'entered the Grotto!',
+            leaveMsg: 'left the Grotto.',
         };
     }
 

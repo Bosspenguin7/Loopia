@@ -451,7 +451,10 @@ export abstract class BaseRoom extends Room<GameState> {
         let spawnY = options.spawnY ?? obstacleConfig.defaultSpawnY;
         spawnX = Math.max(0, Math.min(obstacleConfig.mapWidth, spawnX));
         spawnY = Math.max(0, Math.min(obstacleConfig.mapHeight, spawnY));
-        if (!this.pathfinder.isWalkable(spawnX, spawnY)) {
+        const walkable = this.pathfinder.isWalkable(spawnX, spawnY);
+        console.log(`[${config.logPrefix} SPAWN] requested=(${spawnX}, ${spawnY}) walkable=${walkable}`);
+        if (!walkable) {
+            console.log(`[${config.logPrefix} SPAWN] BLOCKED! Falling back to default=(${obstacleConfig.defaultSpawnX}, ${obstacleConfig.defaultSpawnY})`);
             spawnX = obstacleConfig.defaultSpawnX;
             spawnY = obstacleConfig.defaultSpawnY;
         }

@@ -610,9 +610,13 @@ export class SceneBehavior {
     private zoomEl?: HTMLDivElement;
     private zoomResizeHandler?: () => void;
     private zoomResizeObserver?: ResizeObserver;
+    private zoomSteps = 0;
+    private readonly maxZoomSteps = 3;
 
     private createZoomControls() {
         document.getElementById('zoom-controls')?.remove();
+        this.zoomSteps = 0;
+        const baseZoom = this.scene.cameras.main.zoom;
 
         const wrap = document.createElement('div');
         wrap.id = 'zoom-controls';
@@ -629,12 +633,16 @@ export class SceneBehavior {
         };
 
         wrap.appendChild(makeBtn('assets/ui/zoom_in.png', () => {
+            if (this.zoomSteps >= this.maxZoomSteps) return;
             const cam = this.scene.cameras.main;
-            cam.setZoom(Math.min(cam.zoom + 0.25, 3));
+            cam.setZoom(cam.zoom + 0.25);
+            this.zoomSteps++;
         }));
         wrap.appendChild(makeBtn('assets/ui/zoom_out.png', () => {
+            if (this.zoomSteps <= 0) return;
             const cam = this.scene.cameras.main;
-            cam.setZoom(Math.max(cam.zoom - 0.25, 0.5));
+            cam.setZoom(Math.max(cam.zoom - 0.25, baseZoom));
+            this.zoomSteps--;
         }));
 
         document.body.appendChild(wrap);

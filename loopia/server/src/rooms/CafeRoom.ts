@@ -11,8 +11,8 @@ export class CafeRoom extends BaseRoom {
             obstacleKey: ROOM_TYPES.CAFE,
             speed: PLAYER_SPEED,
             logPrefix: 'CAFE',
-            welcomeMsg: 'kafeye girdi!',
-            leaveMsg: 'kafeden ayrıldı.',
+            welcomeMsg: 'entered the cafe!',
+            leaveMsg: 'left the cafe.',
         };
     }
 

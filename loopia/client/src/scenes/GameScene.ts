@@ -51,6 +51,25 @@ export class GameScene extends Scene {
     async create() {
         this.editorCreate();
 
+        // DEBUG: Compare Phaser displayOrigin with server calculation
+        const obsTopMain = this.children.getByName("obs_top_main") as Phaser.GameObjects.Polygon;
+        if (obsTopMain) {
+            const pts = obsTopMain.geom.points;
+            const rawXs = pts.map((p: any) => p.x);
+            const rawYs = pts.map((p: any) => p.y);
+            console.log(`[DEBUG obs_top_main] x=${obsTopMain.x} y=${obsTopMain.y}`);
+            console.log(`[DEBUG obs_top_main] displayOriginX=${obsTopMain.displayOriginX} displayOriginY=${obsTopMain.displayOriginY}`);
+            console.log(`[DEBUG obs_top_main] rawX range: ${Math.min(...rawXs).toFixed(2)} - ${Math.max(...rawXs).toFixed(2)}`);
+            console.log(`[DEBUG obs_top_main] rawY range: ${Math.min(...rawYs).toFixed(2)} - ${Math.max(...rawYs).toFixed(2)}`);
+            console.log(`[DEBUG obs_top_main] calculated displayOriginX: ${(Math.max(...rawXs) - Math.min(...rawXs)) / 2}`);
+            // First point world coord
+            const p0 = pts[0];
+            console.log(`[DEBUG obs_top_main] point0 world: (${obsTopMain.x + p0.x - obsTopMain.displayOriginX}, ${obsTopMain.y + p0.y - obsTopMain.displayOriginY})`);
+            // Last interesting point (point 10 = 227.45, 258.87)
+            const p10 = pts[10];
+            console.log(`[DEBUG obs_top_main] point10 world: (${obsTopMain.x + p10.x - obsTopMain.displayOriginX}, ${obsTopMain.y + p10.y - obsTopMain.displayOriginY})`);
+        }
+
         // Initialize behavior
         this.behavior = new SceneBehavior(this, {
             cameraBounds: { width: 1200, height: 750 },
@@ -122,7 +141,7 @@ export class GameScene extends Scene {
             doorBears.setVisible(true);
             doorBears.setAlpha(0.01);
 
-            const bearsArrow = createDoorArrow(this, { x: doorBears.x + 22, y: doorBears.y + 30, direction: 'right' });
+            const bearsArrow = createDoorArrow(this, { x: doorBears.x + 17, y: doorBears.y + 75, direction: 'right', scale: 0.2 });
             this.doorArrows.push(bearsArrow);
 
             doorBears.on('pointerover', () => {
@@ -153,7 +172,7 @@ export class GameScene extends Scene {
             doorApartment.setVisible(true);
             doorApartment.setAlpha(0.01);
 
-            const apartmentArrow = createDoorArrow(this, { x: doorApartment.x + 72, y: doorApartment.y + 50, direction: 'up' });
+            const apartmentArrow = createDoorArrow(this, { x: doorApartment.x + 62, y: doorApartment.y + 30, direction: 'right', scale: 0.2 });
             this.doorArrows.push(apartmentArrow);
 
             doorApartment.on('pointerover', () => {
@@ -185,7 +204,7 @@ export class GameScene extends Scene {
             doorCafe.setVisible(true);
             doorCafe.setAlpha(0.01);
 
-            const cafeArrow = createDoorArrow(this, { x: doorCafe.x + 55, y: doorCafe.y + 25, direction: 'up' });
+            const cafeArrow = createDoorArrow(this, { x: doorCafe.x + 25, y: doorCafe.y - 5, direction: 'right', scale: 0.2 });
             this.doorArrows.push(cafeArrow);
 
             doorCafe.on('pointerover', () => {
@@ -216,7 +235,7 @@ export class GameScene extends Scene {
             doorAvalabs.setVisible(true);
             doorAvalabs.setAlpha(0.01);
 
-            const avalabsArrow = createDoorArrow(this, { x: doorAvalabs.x + 65, y: doorAvalabs.y + 10, direction: 'right' });
+            const avalabsArrow = createDoorArrow(this, { x: doorAvalabs.x + 5, y: doorAvalabs.y + 10, direction: 'right', scale: 0.2 });
             this.doorArrows.push(avalabsArrow);
 
             doorAvalabs.on('pointerover', () => {
@@ -247,7 +266,7 @@ export class GameScene extends Scene {
             doorGrotto.setVisible(true);
             doorGrotto.setAlpha(0.01);
 
-            const grottoArrow = createDoorArrow(this, { x: doorGrotto.x + 39, y: doorGrotto.y + 15, direction: 'up' });
+            const grottoArrow = createDoorArrow(this, { x: doorGrotto.x + 49, y: doorGrotto.y - 5, direction: 'up', scale: 0.2 });
             this.doorArrows.push(grottoArrow);
 
             doorGrotto.on('pointerover', () => {
@@ -265,6 +284,37 @@ export class GameScene extends Scene {
                 const targetY = doorGrotto.y + 3;
                 this.behavior.inputManager.movePlayerTo(targetX, targetY, () => {
                     this.scene.start('grotto', {
+                        roomLabel: this.behavior.network?.currentRoomLabel || "Room 1"
+                    });
+                });
+            });
+        }
+
+        // Portal to Second Map
+        const portalSecondMap = this.children.getByName("portal_secondmap") as Phaser.GameObjects.Polygon;
+        if (portalSecondMap) {
+            portalSecondMap.setInteractive(new Phaser.Geom.Polygon(portalSecondMap.geom.points), Phaser.Geom.Polygon.Contains);
+            portalSecondMap.setVisible(true);
+            portalSecondMap.setAlpha(0.01);
+
+            const secondMapArrow = createDoorArrow(this, { x: portalSecondMap.x + 55, y: portalSecondMap.y + 10, direction: 'left' });
+            this.doorArrows.push(secondMapArrow);
+
+            portalSecondMap.on('pointerover', () => {
+                this.input.setDefaultCursor('pointer');
+                secondMapArrow.show();
+            });
+
+            portalSecondMap.on('pointerout', () => {
+                this.input.setDefaultCursor('default');
+                secondMapArrow.hide();
+            });
+
+            portalSecondMap.on('pointerdown', () => {
+                const targetX = portalSecondMap.x + 50;
+                const targetY = portalSecondMap.y + 60;
+                this.behavior.inputManager.movePlayerTo(targetX, targetY, () => {
+                    this.scene.start('SecondScene', {
                         roomLabel: this.behavior.network?.currentRoomLabel || "Room 1"
                     });
                 });
@@ -320,9 +370,20 @@ export class GameScene extends Scene {
         }
     }
 
+    private _posLogTimer = 0;
     update(_time: number, delta: number) {
         if (this.behavior) {
             this.behavior.update(delta);
+
+            // DEBUG: log player position every 2s
+            this._posLogTimer += delta;
+            if (this._posLogTimer > 2000) {
+                this._posLogTimer = 0;
+                const me = this.behavior.playerManager.getMyPlayer();
+                if (me) {
+                    console.log(`[POS] x=${me.container.x.toFixed(0)} y=${me.container.y.toFixed(0)}`);
+                }
+            }
 
             const { width: vw, height: vh } = this.scale.gameSize;
             const isSmall = vw < 1200 || vh < 750;

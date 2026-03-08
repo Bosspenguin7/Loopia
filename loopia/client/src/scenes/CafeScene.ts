@@ -154,8 +154,8 @@ export class CafeScene extends cafe {
             reconnect: true,
             playerName: this.behavior.network?.playerName || 'Player',
             roomLabel: this.roomLabel,
-            spawnX: 592 + 55,
-            spawnY: 303 + 12
+            spawnX: 610,
+            spawnY: 330
         });
     }
 

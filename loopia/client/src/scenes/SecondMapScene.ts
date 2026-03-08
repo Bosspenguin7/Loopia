@@ -1,10 +1,10 @@
 import { SceneBehavior } from './SceneBehavior';
 import { LoadingScreen } from '../ui/LoadingScreen';
 import { createDoorArrow, DoorArrow } from '../ui/DoorArrow';
-import apartment from './apartment';
+import SecondScene from './SecondScene';
 import { ROOM_TYPES } from '@shared/constants';
 
-export class ApartmentScene extends apartment {
+export class SecondMapScene extends SecondScene {
     private behavior!: SceneBehavior;
     private roomLabel: string = "";
     private doorArrow?: DoorArrow;
@@ -23,7 +23,7 @@ export class ApartmentScene extends apartment {
 
     async create() {
         const loading = LoadingScreen.getInstance();
-        loading.show('Entering Apartment...');
+        loading.show('Entering Second Map...');
 
         // Editor-generated scene layout
         this.editorCreate();
@@ -32,10 +32,10 @@ export class ApartmentScene extends apartment {
         this.behavior = new SceneBehavior(this, {
             cameraBounds: { width: 1200, height: 750 },
             cameraCenter: { x: 600, y: 375 },
-            playerScale: 0.15,
+            playerScale: 0.075,
             gridSize: { width: 1200, height: 750 },
             soundButtonX: 760,
-            obstacleKey: 'apartment_room',
+            obstacleKey: 'secondmap_room',
         });
         this.behavior.initManagers();
 
@@ -43,14 +43,14 @@ export class ApartmentScene extends apartment {
         try {
             const playerName = this.behavior.network!.playerName || 'Player';
 
-            // Find spawn point - random position inside door polygon
-            const insideDoor = this.children.getByName("apartment_inside_door") as Phaser.GameObjects.Polygon;
+            // Spawn inside portal_scene1 polygon
+            const portal = this.children.getByName("portal_scene1") as Phaser.GameObjects.Polygon;
             let spawnPos: { x: number; y: number } | undefined;
-            if (insideDoor) {
-                const pts = insideDoor.geom.points;
+            if (portal) {
+                const pts = portal.geom.points;
                 const worldPts = pts.map((p: Phaser.Geom.Point) => ({
-                    x: insideDoor.x + (p.x - insideDoor.displayOriginX) * insideDoor.scaleX,
-                    y: insideDoor.y + (p.y - insideDoor.displayOriginY) * insideDoor.scaleY
+                    x: portal.x + (p.x - portal.displayOriginX) * portal.scaleX,
+                    y: portal.y + (p.y - portal.displayOriginY) * portal.scaleY
                 }));
                 const triIndex = Math.floor(Math.random() * (worldPts.length - 2)) + 1;
                 const a = worldPts[0], b = worldPts[triIndex], c = worldPts[triIndex + 1];
@@ -63,7 +63,7 @@ export class ApartmentScene extends apartment {
             }
 
             await this.behavior.connectToRoom(() =>
-                this.behavior.network!.joinRoom(ROOM_TYPES.APARTMENT, playerName, this.roomLabel, spawnPos)
+                this.behavior.network!.joinRoom(ROOM_TYPES.SECONDMAP, playerName, this.roomLabel, spawnPos)
             );
 
             loading.hide();
@@ -71,34 +71,30 @@ export class ApartmentScene extends apartment {
             loading.hide();
         }
 
-        // Sound button
+        // Portal to Scene 1 — northeast arrow
+        const portal = this.children.getByName("portal_scene1") as Phaser.GameObjects.Polygon;
+        if (portal) {
+            portal.setInteractive(new Phaser.Geom.Polygon(portal.geom.points), Phaser.Geom.Polygon.Contains);
+            portal.setAlpha(0.01);
 
+            this.doorArrow = createDoorArrow(this, { x: portal.x + 25, y: portal.y - 20, direction: 'right' });
 
-        // Exit Door Interaction
-        const exitDoor = this.children.getByName("apartment_inside_door") as Phaser.GameObjects.Polygon;
-        if (exitDoor) {
-            exitDoor.setInteractive(new Phaser.Geom.Polygon(exitDoor.geom.points), Phaser.Geom.Polygon.Contains);
-            exitDoor.setAlpha(0.01);
-
-            this.doorArrow = createDoorArrow(this, { x: exitDoor.x - 10, y: exitDoor.y + 90, direction: 'left' });
-
-            exitDoor.on('pointerover', () => {
+            portal.on('pointerover', () => {
                 this.input.setDefaultCursor('pointer');
                 this.doorArrow?.show();
             });
 
-            exitDoor.on('pointerout', () => {
+            portal.on('pointerout', () => {
                 this.input.setDefaultCursor('default');
                 this.doorArrow?.hide();
             });
 
-            exitDoor.on('pointerdown', () => {
-                const pts = exitDoor.geom.points;
+            portal.on('pointerdown', () => {
+                const pts = portal.geom.points;
                 const worldPts = pts.map((p: Phaser.Geom.Point) => ({
-                    x: exitDoor.x + (p.x - exitDoor.displayOriginX) * exitDoor.scaleX,
-                    y: exitDoor.y + (p.y - exitDoor.displayOriginY) * exitDoor.scaleY
+                    x: portal.x + (p.x - portal.displayOriginX) * portal.scaleX,
+                    y: portal.y + (p.y - portal.displayOriginY) * portal.scaleY
                 }));
-                // Use triangle sampling to get a point guaranteed inside the polygon
                 const triIndex = Math.floor(Math.random() * (worldPts.length - 2)) + 1;
                 const a = worldPts[0], b = worldPts[triIndex], c = worldPts[triIndex + 1];
                 let r1 = Math.random(), r2 = Math.random();
@@ -126,8 +122,8 @@ export class ApartmentScene extends apartment {
             reconnect: true,
             playerName: this.behavior.network?.playerName || 'Player',
             roomLabel: this.roomLabel,
-            spawnX: 346,
-            spawnY: 205
+            spawnX: 420,
+            spawnY: 620
         });
     }
 

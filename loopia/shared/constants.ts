@@ -5,6 +5,7 @@ export const ROOM_TYPES = {
     APARTMENT: 'apartment_room',
     AVALABS: 'avalabs_room',
     GROTTO: 'grotto_room',
+    SECONDMAP: 'secondmap_room',
 } as const;
 
 export const PLAYER_SPEED = 55;
